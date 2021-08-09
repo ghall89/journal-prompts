@@ -5,7 +5,9 @@ import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
 import Prompts from '../data/prompts.json';
 
 const Prompt = () => {
-	const [prompt, setPrompt] = useState('Hello there!');
+	const [prompt, setPrompt] = useState(
+		Prompts[Math.floor(Math.random() * Prompts.length)]
+	);
 
 	const choosePrompt = () => {
 		const newPrompt = Prompts[Math.floor(Math.random() * Prompts.length)];
@@ -18,7 +20,7 @@ const Prompt = () => {
 				<p className="promptText">{prompt}</p>
 			</div>
 			<button className="promptBtn" onClick={choosePrompt}>
-				<FontAwesomeIcon icon={faSyncAlt} /> Generate Prompt
+				<FontAwesomeIcon icon={faSyncAlt} /> Generate New Prompt
 			</button>
 		</div>
 	);
