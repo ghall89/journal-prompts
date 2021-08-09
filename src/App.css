@@ -1,5 +1,60 @@
+.promptArea {
+	width: 80%;
+	margin: auto;
+	margin-top: 20%;
+	text-align: center;
+}
+
+.card {
+	background: white;
+	/* background-size: cover; */
+	width: 80%;
+	margin: auto;
+	padding: 2rem;
+	border-radius: 6px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .promptText {
 	font-size: 2rem;
-	color: white;
+	color: rgb(39 40 40);
+}
+
+.promptBtn {
+	margin: 2rem;
+	font-family: 'Libre Baskerville', serif;
+	background: none;
+	border: none;
+	color: rgb(77 179 212);
+	font-size: 1.3rem;
+	transition: color 0.1s;
+}
+
+.promptBtn:hover {
+	text-decoration: underline;
+	color: rgb(84 194 230);
+}
+
+.promptBtn:active {
+	color: rgb(56 129 152);
+}
+
+a {
+	color: rgb(77 179 212);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: rgb(84 194 230);
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+footer > p {
 	text-align: center;
 }

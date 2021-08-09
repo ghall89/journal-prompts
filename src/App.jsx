@@ -1,13 +1,12 @@
 import './App.css';
+import Prompt from './components/Prompt.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
 	return (
 		<div className="App">
-			<div>
-				<p className="promptText">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				</p>
-			</div>
+			<Prompt />
+			<Footer />
 		</div>
 	);
 }
