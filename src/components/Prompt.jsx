@@ -1,4 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
+
 import Prompts from '../data/prompts.json';
 
 const Prompt = () => {
@@ -15,7 +18,7 @@ const Prompt = () => {
 				<p className="promptText">{prompt}</p>
 			</div>
 			<button className="promptBtn" onClick={choosePrompt}>
-				Generate Prompt
+				<FontAwesomeIcon icon={faSyncAlt} /> Generate Prompt
 			</button>
 		</div>
 	);

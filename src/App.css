@@ -31,7 +31,6 @@
 }
 
 .promptBtn:hover {
-	text-decoration: underline;
 	color: rgb(84 194 230);
 }
 
@@ -57,4 +56,18 @@ footer {
 
 footer > p {
 	text-align: center;
+}
+
+@media screen and (max-width: 560px) {
+	.promptArea {
+		margin-top: 40%;
+	}
+
+	.card {
+		box-shadow: none;
+	}
+
+	.promptText {
+		font-size: 1.5rem;
+	}
 }
