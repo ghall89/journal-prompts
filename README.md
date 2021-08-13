@@ -6,7 +6,6 @@ I'm a big believer in practicing mindfulness, and I enjoy journaling. The proble
 
 ## Future Developments
 
-- Display a random, minimal/calming photo in the background from Unsplash.
 - Move prompts into a MongoDB database, and allow users to add their own prompts.
 
 ## Usage
