@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
+import { faSyncAlt, faHistory } from '@fortawesome/free-solid-svg-icons';
 
 import Prompts from '../data/prompts.json';
 
@@ -9,9 +9,24 @@ const Prompt = () => {
 		Prompts[Math.floor(Math.random() * Prompts.length)]
 	);
 
+	const [history, setHistory] = useState(
+		localStorage.mindfullnessPrompts
+			? JSON.parse(localStorage.mindfullnessPrompts)
+			: [prompt]
+	);
+
+	useEffect(() => {
+		localStorage.setItem('mindfullnessPrompts', JSON.stringify(history));
+	});
+
 	const choosePrompt = () => {
 		const newPrompt = Prompts[Math.floor(Math.random() * Prompts.length)];
 		setPrompt(newPrompt);
+		setHistory([...history, newPrompt]);
+	};
+
+	const displayHistory = () => {
+		console.log(history);
 	};
 
 	return (
@@ -21,6 +36,9 @@ const Prompt = () => {
 			</div>
 			<button className="promptBtn" onClick={choosePrompt}>
 				<FontAwesomeIcon icon={faSyncAlt} /> Generate New Prompt
+			</button>
+			<button className="promptBtn" onClick={displayHistory}>
+				<FontAwesomeIcon icon={faHistory} /> Previous Prompts
 			</button>
 		</div>
 	);
