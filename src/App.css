@@ -1,3 +1,25 @@
+h1 {
+	text-align: center;
+	margin-top: 30px;
+	font-size: 2.4rem;
+}
+
+.backdrop {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -100;
+}
+
+.backdrop img {
+	min-height: 100%;
+	min-width: 100%;
+	opacity: 0.15;
+}
+
 .promptArea {
 	width: 80%;
 	margin: auto;
@@ -59,6 +81,10 @@ footer > p {
 }
 
 @media screen and (max-width: 560px) {
+	.backdrop {
+		display: none;
+	}
+
 	.promptArea {
 		margin-top: 40%;
 	}
