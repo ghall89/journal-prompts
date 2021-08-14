@@ -7,8 +7,6 @@ import Prompts from '../data/prompts.json';
 import ModalEl from './ModalEl.jsx';
 
 const Prompt = () => {
-	// Modal.setAppElement('#yourAppElement');
-
 	const [modalIsOpen, setIsOpen] = useState(false);
 
 	function openModal() {
@@ -42,7 +40,7 @@ const Prompt = () => {
 	return (
 		<>
 			<div className="promptArea">
-				<div className="card">
+				<div className="card promptBody">
 					<p className="promptText">{prompt}</p>
 				</div>
 				<button className="promptBtn" onClick={choosePrompt}>

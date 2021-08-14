@@ -29,12 +29,14 @@ h1 {
 
 .card {
 	background: white;
-	/* background-size: cover; */
-	width: 80%;
-	margin: auto;
 	padding: 2rem;
 	border-radius: 6px;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.promptBody {
+	width: 80%;
+	margin: auto;
 }
 
 .promptText {
@@ -78,6 +80,17 @@ footer {
 
 footer > p {
 	text-align: center;
+}
+
+.modal {
+	top: '50%';
+	left: '50%';
+	right: 'auto';
+	bottom: 'auto';
+	margin-right: '-50%';
+	transform: 'translate(-50%, -50%)';
+	max-width: 50%;
+	max-height: 50%;
 }
 
 @media screen and (max-width: 560px) {

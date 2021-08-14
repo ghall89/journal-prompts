@@ -1,4 +1,6 @@
 import Modal from 'react-modal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const ModalEl = props => {
 	const customStyles = {
@@ -12,14 +14,12 @@ const ModalEl = props => {
 		}
 	};
 
-	let subtitle;
-
 	function afterOpenModal() {
 		// references are now sync'd and can be accessed.
-		subtitle.style.color = '#f00';
+		// subtitle.style.color = '#f00';
 	}
 
-	console.log(props.data);
+	// Modal.setAppElement('#yourAppElement');
 
 	return (
 		<div>
@@ -28,18 +28,18 @@ const ModalEl = props => {
 				onAfterOpen={afterOpenModal}
 				onRequestClose={props.data.closeModal}
 				style={customStyles}
+				class="card"
 				contentLabel="Example Modal"
 			>
-				<h2 ref={_subtitle => (subtitle = _subtitle)}>Hello</h2>
-				<button onClick={props.data.closeModal}>close</button>
-				<div>I am a modal</div>
-				<form>
-					<input />
-					<button>tab navigation</button>
-					<button>stays</button>
-					<button>inside</button>
-					<button>the modal</button>
-				</form>
+				<button class="promptBtn" onClick={props.data.closeModal}>
+					<FontAwesomeIcon icon={faTimes} />
+				</button>
+				<h3>Prompt History</h3>
+				<ul>
+					{props.data.history.reverse().map(item => (
+						<li>{item}</li>
+					))}
+				</ul>
 			</Modal>
 		</div>
 	);
