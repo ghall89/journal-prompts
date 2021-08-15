@@ -4,7 +4,7 @@ import { faSyncAlt, faHistory } from '@fortawesome/free-solid-svg-icons';
 
 import Prompts from '../data/prompts.json';
 
-import ModalEl from './ModalEl.jsx';
+import History from './History.jsx';
 
 const Prompt = () => {
 	const [modalIsOpen, setIsOpen] = useState(false);
@@ -50,7 +50,7 @@ const Prompt = () => {
 					<FontAwesomeIcon icon={faHistory} /> Previous Prompts
 				</button>
 			</div>
-			<ModalEl data={{ modalIsOpen, setIsOpen, closeModal, history }} />
+			<History data={{ modalIsOpen, setIsOpen, closeModal, history }} />
 		</>
 	);
 };

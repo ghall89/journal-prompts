@@ -1,8 +1,16 @@
+/* Heading */
+
 h1 {
 	text-align: center;
 	margin-top: 30px;
 	font-size: 2.4rem;
 }
+
+h3 {
+	text-align: center;
+}
+
+/* Background Image */
 
 .backdrop {
 	position: absolute;
@@ -19,6 +27,8 @@ h1 {
 	min-width: 100%;
 	opacity: 0.15;
 }
+
+/* Prompt Display */
 
 .promptArea {
 	width: 80%;
@@ -44,6 +54,8 @@ h1 {
 	color: rgb(39 40 40);
 }
 
+/* Buttons */
+
 .promptBtn {
 	margin: 2rem;
 	font-family: 'Libre Baskerville', serif;
@@ -62,6 +74,8 @@ h1 {
 	color: rgb(56 129 152);
 }
 
+/* Link */
+
 a {
 	color: rgb(77 179 212);
 	text-decoration: none;
@@ -71,6 +85,8 @@ a:hover {
 	text-decoration: underline;
 	color: rgb(84 194 230);
 }
+
+/* Footer */
 
 footer {
 	position: absolute;
@@ -82,16 +98,19 @@ footer > p {
 	text-align: center;
 }
 
-.modal {
-	top: '50%';
-	left: '50%';
-	right: 'auto';
-	bottom: 'auto';
-	margin-right: '-50%';
-	transform: 'translate(-50%, -50%)';
-	max-width: 50%;
-	max-height: 50%;
+/* Modal Stuff */
+
+.modalScroll {
+	overflow: scroll;
+	max-height: 400px;
 }
+
+.modalBtn {
+	margin: 0;
+	font-size: 2rem;
+}
+
+/* Media Queries */
 
 @media screen and (max-width: 560px) {
 	.backdrop {
