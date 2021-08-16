@@ -9,14 +9,6 @@ import History from './History.jsx';
 const Prompt = () => {
 	const [modalIsOpen, setIsOpen] = useState(false);
 
-	function openModal() {
-		setIsOpen(true);
-	}
-
-	function closeModal() {
-		setIsOpen(false);
-	}
-
 	const [prompt, setPrompt] = useState(
 		Prompts[Math.floor(Math.random() * Prompts.length)]
 	);
@@ -24,18 +16,27 @@ const Prompt = () => {
 	const [history, setHistory] = useState(
 		localStorage.mindfullnessPrompts
 			? JSON.parse(localStorage.mindfullnessPrompts)
-			: [prompt]
+			: []
 	);
+
+	const openModal = () => {
+		setIsOpen(true);
+	};
+
+	const closeModal = () => {
+		setIsOpen(false);
+	};
 
 	useEffect(() => {
 		localStorage.setItem('mindfullnessPrompts', JSON.stringify(history));
-	});
+	}, [history]);
 
-	const choosePrompt = () => {
-		const newPrompt = Prompts[Math.floor(Math.random() * Prompts.length)];
-		setPrompt(newPrompt);
-		setHistory([...history, newPrompt]);
-	};
+	useEffect(() => {
+		setHistory([...history, prompt]);
+	}, [prompt]);
+
+	const choosePrompt = () =>
+		setPrompt(Prompts[Math.floor(Math.random() * Prompts.length)]);
 
 	return (
 		<>
