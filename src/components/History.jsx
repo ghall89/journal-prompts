@@ -25,10 +25,7 @@ const History = props => {
 				contentLabel="Prompt History"
 			>
 				<div>
-					<button
-						className="promptBtn modalBtn"
-						onClick={props.data.closeModal}
-					>
+					<button className="modalBtn" onClick={props.data.closeModal}>
 						<FontAwesomeIcon icon={faTimes} />
 					</button>
 				</div>

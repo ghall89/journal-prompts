@@ -43,10 +43,10 @@ const Prompt = () => {
 				<div className="card promptBody">
 					<p className="promptText">{prompt}</p>
 				</div>
-				<button className="promptBtn" onClick={choosePrompt}>
+				<button onClick={choosePrompt}>
 					<FontAwesomeIcon icon={faSyncAlt} /> Generate New Prompt
 				</button>
-				<button className="promptBtn" onClick={openModal}>
+				<button onClick={openModal}>
 					<FontAwesomeIcon icon={faHistory} /> Previous Prompts
 				</button>
 			</div>
