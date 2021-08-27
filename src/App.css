@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+body {
+	margin: 0;
+	font-family: 'Libre Baskerville', serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: rgb(211, 229, 236);
+	background: linear-gradient(
+		90deg,
+		rgba(211, 229, 236, 1) 0%,
+		rgba(174, 212, 212, 1) 100%
+	);
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
 /* Heading */
 
 h1 {
@@ -33,7 +53,7 @@ h3 {
 .promptArea {
 	width: 80%;
 	margin: auto;
-	margin-top: 20%;
+	margin-top: 14%;
 	text-align: center;
 }
 
@@ -94,8 +114,7 @@ a:hover {
 /* Footer */
 
 footer {
-	position: absolute;
-	bottom: 0;
+	margin-top: 7%;
 	width: 100%;
 }
 
@@ -116,6 +135,11 @@ footer > p {
 
 /* Media Queries */
 
+@media screen and (max-width: 800px) {
+	button {
+		margin: 1rem;
+	}
+}
 @media screen and (max-width: 560px) {
 	.backdrop {
 		display: none;
