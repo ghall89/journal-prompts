@@ -48,7 +48,7 @@ const Prompt = () => {
 					<FontAwesomeIcon icon={faSyncAlt} /> Generate New Prompt
 				</button>
 				<button onClick={openModal}>
-					<FontAwesomeIcon icon={faHistory} /> Previous Prompts
+					<FontAwesomeIcon icon={faHistory} /> Recent Prompts
 				</button>
 			</div>
 			<History data={{ modalIsOpen, setIsOpen, closeModal, history }} />

@@ -11,7 +11,8 @@ const History = props => {
 			bottom: 'auto',
 			marginRight: '-50%',
 			transform: 'translate(-50%, -50%)',
-			maxHeight: '70%'
+			maxHeight: '70%',
+			width: '70%'
 		}
 	};
 
@@ -29,12 +30,12 @@ const History = props => {
 						<FontAwesomeIcon icon={faTimes} />
 					</button>
 				</div>
-				<h3>Prompt History</h3>
 				<div className="modalScroll">
 					<ul>
 						{props.data.history
 							.slice(0)
 							.reverse()
+							.slice(0, 15)
 							.map(item => (
 								<li key={Math.random()}>{item}</li>
 							))}
