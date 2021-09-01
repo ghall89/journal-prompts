@@ -12,6 +12,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
+- [Credits](#credits)
 
 ## Description
 
@@ -52,5 +53,8 @@ As a user I'd like an app that will generate a random prompt for journaling. I'd
 
 - [React](https://reactjs.org)
 - [react-modal](https://www.npmjs.com/package/react-modal)
+
+## Credits
+
 - [DIN Alternate font](https://www.cufonfonts.com/font/din-alternate)
 - [Background Graphic](https://www.vecteezy.com/vector-art/2072726-spring-nature-landscape)
