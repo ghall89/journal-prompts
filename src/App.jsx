@@ -8,8 +8,8 @@ function App() {
 				<img src="https://source.unsplash.com/random?calm" alt="" />
 			</div> */}
 			<h1>Mindfulness Prompts</h1>
-			<Prompt />
 			<Footer />
+			<Prompt />
 		</div>
 	);
 }

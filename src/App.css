@@ -45,7 +45,7 @@ button:active {
 
 .promptArea {
 	background-color: white;
-	margin: 5%;
+	margin: 5% 5% 0;
 	padding: 10px 30px;
 	border-radius: 6px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -80,7 +80,7 @@ footer > p {
 
 @media screen and (min-width: 512px) {
 	.promptArea {
-		margin: 20% auto;
+		margin: 100px auto 0;
 	}
 }
 
@@ -91,15 +91,15 @@ footer > p {
 	}
 }
 
-@media screen and (min-width: 920px) {
-	.promptArea {
-		margin: 180px auto;
-	}
-}
-
-@media screen and (max-height: 720px) {
+@media screen and (max-height: 660px) {
 	footer {
-		top: 130px;
+		position: revert;
+		bottom: none;
 		background: none;
+		padding: 0;
+		max-height: 30px;
+	}
+	.promptArea {
+		margin-bottom: 30px;
 	}
 }
