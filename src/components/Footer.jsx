@@ -5,8 +5,7 @@ const Footer = () => {
 	return (
 		<footer>
 			<p>
-				Made with <FontAwesomeIcon icon={faHeart} /> by{' '}
-				<a href="https://ghall.dev">Graham Hall</a>
+				Made with ❤️ by <a href="https://ghall.dev">Graham Hall</a>
 			</p>
 		</footer>
 	);

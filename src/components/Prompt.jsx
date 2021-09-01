@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSyncAlt, faHistory } from '@fortawesome/free-solid-svg-icons';
 
 import Prompts from '../data/prompts.json';
 
@@ -41,15 +39,11 @@ const Prompt = () => {
 	return (
 		<>
 			<div className="promptArea">
-				<div className="card promptBody">
-					<p className="promptText">{prompt}</p>
+				<div className="promptText">
+					<p>{prompt}</p>
 				</div>
-				<button onClick={choosePrompt}>
-					<FontAwesomeIcon icon={faSyncAlt} /> Generate New Prompt
-				</button>
-				<button onClick={openModal}>
-					<FontAwesomeIcon icon={faHistory} /> Recent Prompts
-				</button>
+				<button onClick={choosePrompt}>New Prompt</button>
+				<button onClick={openModal}>Recent Prompts</button>
 			</div>
 			<History data={{ modalIsOpen, setIsOpen, closeModal, history }} />
 		</>

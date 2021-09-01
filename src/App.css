@@ -1,169 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');
+
+@font-face {
+	font-family: 'DIN Alternate';
+	src: url('./res/DINAlternate-Bold.woff') format('Woff');
+}
+
+* {
+	font-family: 'DIN Alternate', sans-serif;
+	margin: 0;
+	padding: 0;
+}
 
 body {
-	margin: 0;
-	font-family: 'Amatic SC', serif;
-	color: #3d3d3d;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background: rgb(211, 229, 236);
-	background: linear-gradient(
-		90deg,
-		rgb(211, 229, 236) 0%,
-		rgb(174, 212, 212) 100%
-	);
+	background-image: url(./res/backdrop.svg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
 }
-
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
-}
-
-/* Heading */
 
 h1 {
+	color: rgb(123 123 123);
+	font-size: 2.3rem;
+	font-weight: 500;
 	text-align: center;
-	margin-top: 30px;
-	font-size: 2.7rem;
-}
-
-h3 {
-	text-align: center;
-}
-
-/* Lists */
-
-ul {
-	font-size: 2rem;
-	list-style: none;
-}
-
-/* Background Image */
-
-.backdrop {
-	position: absolute;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: -100;
-}
-
-.backdrop img {
-	min-height: 100%;
-	min-width: 100%;
-	opacity: 0.15;
-}
-
-/* Prompt Display */
-
-.promptArea {
-	width: 80%;
-	margin: auto;
 	margin-top: 14%;
-	text-align: center;
 }
-
-.card {
-	background: rgba(250, 250, 250, 0.6);
-	padding: 2rem;
-	border-radius: 6px;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.promptBody {
-	width: 80%;
-	margin: auto;
-}
-
-.promptText {
-	font-size: 2.5rem;
-	color: #676767;
-}
-
-/* Buttons */
 
 button {
-	margin: 2rem;
-	font-family: 'Amatic SC', serif;
-	font-weight: 700;
-	background: none;
 	border: none;
-	color: rgb(77 179 212);
-	font-size: 1.8rem;
-	transition: transform 0.3s;
-}
-
-button:hover {
-	color: rgb(84 194 230);
-	transform: scale(1.1);
+	color: white;
+	font-size: 1.4rem;
+	background-color: rgb(105 186 201);
+	margin: 8% auto;
+	padding: 6%;
+	width: 100%;
+	border-radius: 8px;
+	box-shadow: 0px 4px rgb(66 149 165);
 }
 
 button:active {
-	color: rgb(56 129 152);
+	transform: translate(0, 2px);
+	box-shadow: 0px 2px rgb(66 149 165);
 }
 
-.modalBtn {
-	margin: 0;
-	font-size: 2rem;
+.promptArea {
+	background-color: white;
+	margin: 5%;
+	padding: 4% 12%;
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	margin-top: 20%;
 }
 
-/* Link */
-
-a {
-	color: rgb(77, 179, 212);
-	text-decoration: none;
+.promptText {
+	height: 130px;
+	display: table-cell;
+	vertical-align: middle;
 }
 
-a:hover {
-	color: rgb(84, 194, 230);
+.promptText p {
+	font-size: 1.8rem;
+	color: rgb(123 123 123);
+	text-align: center;
 }
-
-/* Footer */
 
 footer {
-	margin-top: 7%;
+	position: absolute;
+	bottom: 0;
+	background: white;
 	width: 100%;
+	text-align: center;
+	padding: 10% 0;
 }
 
 footer > p {
-	text-align: center;
-	font-size: 1.6rem;
-}
-
-/* Modal Stuff */
-
-.modalScroll {
-	overflow: scroll;
-	max-height: 400px;
-}
-
-.modalScroll li {
-	margin: 12px;
-}
-
-/* Media Queries */
-
-@media screen and (max-width: 800px) {
-	button {
-		margin: 1rem;
-	}
-}
-@media screen and (max-width: 560px) {
-	.backdrop {
-		display: none;
-	}
-
-	.promptArea {
-		margin-top: 40%;
-	}
-
-	.card {
-		box-shadow: none;
-	}
-
-	.promptText {
-		font-size: 2rem;
-	}
+	font-size: 1.2rem;
 }
