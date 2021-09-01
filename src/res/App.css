@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: 'DIN Alternate';
-	src: url('./res/DINAlternate-Bold.woff') format('Woff');
+	src: url('./DINAlternate-Bold.woff') format('Woff');
 }
 
 * {
@@ -12,7 +12,7 @@
 }
 
 body {
-	background-image: url(./res/backdrop.svg);
+	background-image: url(./backdrop.svg);
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;

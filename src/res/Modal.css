@@ -1,0 +1,14 @@
+ul {
+	font-size: 1.5rem;
+	list-style: none;
+	margin-bottom: 40px;
+}
+
+li {
+	margin: 6px 0;
+}
+
+.modalScroll {
+	height: 85%;
+	overflow: scroll;
+}

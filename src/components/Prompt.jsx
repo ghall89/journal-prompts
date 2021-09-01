@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
-
 import Prompts from '../data/prompts.json';
-
 import History from './History.jsx';
 
 const Prompt = () => {

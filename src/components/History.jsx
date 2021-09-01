@@ -1,18 +1,18 @@
 import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import '../res/Modal.css';
 
 const History = props => {
 	const customStyles = {
 		content: {
-			top: '50%',
-			left: '50%',
-			right: 'auto',
-			bottom: 'auto',
-			marginRight: '-50%',
-			transform: 'translate(-50%, -50%)',
-			maxHeight: '70%',
-			width: '70%'
+			inset: '10px',
+			maxHeight: '660px',
+			maxWidth: '500px',
+			margin: 'auto',
+			border: 'none',
+			boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+			borderRadius: '6px'
 		}
 	};
 
@@ -25,11 +25,6 @@ const History = props => {
 				ariaHideApp={false}
 				contentLabel="Prompt History"
 			>
-				<div>
-					<button className="modalBtn" onClick={props.data.closeModal}>
-						<FontAwesomeIcon icon={faTimes} />
-					</button>
-				</div>
 				<div className="modalScroll">
 					<ul>
 						{props.data.history
@@ -40,6 +35,11 @@ const History = props => {
 								<li key={Math.random()}>{item}</li>
 							))}
 					</ul>
+				</div>
+				<div>
+					<button className="modalBtn" onClick={props.data.closeModal}>
+						<FontAwesomeIcon icon={faTimes} />
+					</button>
 				</div>
 			</Modal>
 		</div>
