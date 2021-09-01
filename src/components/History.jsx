@@ -24,6 +24,7 @@ const History = props => {
 				style={customStyles}
 				ariaHideApp={false}
 				contentLabel="Prompt History"
+				closeTimeoutMS={300}
 			>
 				<div className="modalScroll">
 					<ul>
