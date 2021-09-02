@@ -5,7 +5,7 @@ ul {
 }
 
 li {
-	margin: 6px 0;
+	margin: 12px 0;
 }
 
 .modalScroll {
@@ -16,11 +16,6 @@ li {
 .ReactModal__Overlay {
 	opacity: 0;
 	transition: opacity 300ms ease-in-out;
-}
-
-.ReactModal_Content {
-	transform: scale(0.75);
-	transition: transform 300ms ease-in-out;
 }
 
 .ReactModal__Overlay--after-open {
