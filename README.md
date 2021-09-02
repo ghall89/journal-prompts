@@ -45,7 +45,7 @@ As a user I'd like an app that will generate a random prompt for journaling. I'd
 
 ## Usage
 
-- Visit https://mindfulness-prompts.herokuapp.com, or `localhost:3000` if running locally
+- Visit https://ghall89.github.io/mindfulness-prompts/, or `localhost:3000` if running locally
 - Click `Generate New Prompt` to display a new prompt
 - Click `Previous Prompts` to see a history of prompts you've seen
 
