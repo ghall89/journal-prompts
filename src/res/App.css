@@ -93,12 +93,6 @@ footer > p {
 	}
 }
 
-@media screen and (min-height: 635px) {
-	body {
-		overflow: hidden;
-	}
-}
-
 @media screen and (max-height: 660px) {
 	footer {
 		position: revert;
