@@ -1,27 +1,13 @@
 import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import '../res/Modal.css';
 
 const History = props => {
-	const customStyles = {
-		content: {
-			inset: '10px',
-			maxHeight: '660px',
-			maxWidth: '500px',
-			margin: 'auto',
-			border: 'none',
-			boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-			borderRadius: '6px'
-		}
-	};
-
 	return (
 		<div>
 			<Modal
 				isOpen={props.data.modalIsOpen}
 				onRequestClose={props.data.closeModal}
-				style={customStyles}
 				ariaHideApp={false}
 				contentLabel="Prompt History"
 				closeTimeoutMS={300}

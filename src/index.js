@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './res/App.css';
+import './res/App.scss';
 import App from './App.jsx';
 
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
