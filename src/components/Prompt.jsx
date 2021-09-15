@@ -36,7 +36,7 @@ const Prompt = () => {
 
 	return (
 		<>
-			<div className="promptArea">
+			<div className="promptArea card">
 				<div className="promptText">
 					<p>{prompt}</p>
 				</div>

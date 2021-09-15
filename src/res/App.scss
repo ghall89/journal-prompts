@@ -62,7 +62,6 @@ button:active {
 // Prompt Display Area
 
 .promptArea {
-	@extend .card;
 	background-color: white;
 	margin: 5% 5% 0;
 	padding: 10px 30px;
@@ -102,7 +101,6 @@ button:active {
 }
 
 .ReactModal__Content {
-	@extend .card;
 	inset: 10px;
 	max-height: 660px;
 	max-width: 500px;
