@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/mindfulness-prompts/static/css/main.aad14a28.chunk.css",
-    "main.js": "/mindfulness-prompts/static/js/main.0223e319.chunk.js",
-    "main.js.map": "/mindfulness-prompts/static/js/main.0223e319.chunk.js.map",
+    "main.css": "/mindfulness-prompts/static/css/main.6ce3f075.chunk.css",
+    "main.js": "/mindfulness-prompts/static/js/main.d1fec719.chunk.js",
+    "main.js.map": "/mindfulness-prompts/static/js/main.d1fec719.chunk.js.map",
     "runtime-main.js": "/mindfulness-prompts/static/js/runtime-main.b3d038af.js",
     "runtime-main.js.map": "/mindfulness-prompts/static/js/runtime-main.b3d038af.js.map",
-    "static/js/2.52f8e2ca.chunk.js": "/mindfulness-prompts/static/js/2.52f8e2ca.chunk.js",
-    "static/js/2.52f8e2ca.chunk.js.map": "/mindfulness-prompts/static/js/2.52f8e2ca.chunk.js.map",
+    "static/js/2.2b37d5fd.chunk.js": "/mindfulness-prompts/static/js/2.2b37d5fd.chunk.js",
+    "static/js/2.2b37d5fd.chunk.js.map": "/mindfulness-prompts/static/js/2.2b37d5fd.chunk.js.map",
     "index.html": "/mindfulness-prompts/index.html",
     "service-worker.js": "/mindfulness-prompts/service-worker.js",
     "service-worker.js.map": "/mindfulness-prompts/service-worker.js.map",
-    "static/css/main.aad14a28.chunk.css.map": "/mindfulness-prompts/static/css/main.aad14a28.chunk.css.map",
-    "static/js/2.52f8e2ca.chunk.js.LICENSE.txt": "/mindfulness-prompts/static/js/2.52f8e2ca.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/mindfulness-prompts/static/media/backdrop.7b108a45.svg"
+    "static/css/main.6ce3f075.chunk.css.map": "/mindfulness-prompts/static/css/main.6ce3f075.chunk.css.map",
+    "static/js/2.2b37d5fd.chunk.js.LICENSE.txt": "/mindfulness-prompts/static/js/2.2b37d5fd.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/mindfulness-prompts/static/media/backdrop.7b108a45.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b3d038af.js",
-    "static/js/2.52f8e2ca.chunk.js",
-    "static/css/main.aad14a28.chunk.css",
-    "static/js/main.0223e319.chunk.js"
+    "static/js/2.2b37d5fd.chunk.js",
+    "static/css/main.6ce3f075.chunk.css",
+    "static/js/main.d1fec719.chunk.js"
   ]
 }
