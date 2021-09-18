@@ -1,13 +1,11 @@
 import { useState, useEffect } from 'react';
-import Prompts from '../data/prompts.json';
+import generatePrompt from '../helpers/generatePrompt';
 import History from './History.jsx';
 
 const Prompt = () => {
 	const [modalIsOpen, setIsOpen] = useState(false);
 
-	const [prompt, setPrompt] = useState(
-		Prompts[Math.floor(Math.random() * Prompts.length)]
-	);
+	const [prompt, setPrompt] = useState(generatePrompt());
 
 	const [history, setHistory] = useState(
 		localStorage.mindfullnessPrompts
@@ -31,8 +29,7 @@ const Prompt = () => {
 		setHistory([...history, prompt]);
 	}, [prompt]);
 
-	const choosePrompt = () =>
-		setPrompt(Prompts[Math.floor(Math.random() * Prompts.length)]);
+	const choosePrompt = () => setPrompt(generatePrompt());
 
 	return (
 		<>
