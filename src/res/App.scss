@@ -47,6 +47,11 @@ button {
 	@include button-shadow(4px);
 }
 
+button:hover {
+	transform: translate(0, -1px);
+	@include button-shadow(5px);
+}
+
 button:active {
 	transform: translate(0, 2px);
 	@include button-shadow(2px);
@@ -89,7 +94,7 @@ button:active {
 
 .ReactModal__Overlay {
 	opacity: 0;
-	transition: opacity 300ms ease-in-out;
+	transition: opacity 300ms ease-out;
 }
 
 .ReactModal__Overlay--after-open {
@@ -114,7 +119,8 @@ button:active {
 	max-height: 660px;
 	max-width: 500px;
 	margin: auto;
-	transform: scale(0.75);
+	// transform: scale(0.75);
+	transform: translateY(90%);
 	transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	ul {
 		font-size: 1.5rem;
@@ -126,18 +132,24 @@ button:active {
 		}
 	}
 
+	button {
+		margin: 0;
+	}
+
 	.modalScroll {
-		height: 85%;
+		height: 90%;
 		overflow: scroll;
 	}
 }
 
 .ReactModal__Content--after-open {
-	transform: scale(1);
+	// transform: scale(1);
+	transform: translateY(0);
 }
 
 .ReactModal__Content--before-close {
-	transform: scale(0.75);
+	// transform: scale(0.75);
+	transform: translateY(90%);
 }
 
 // End React Modal
