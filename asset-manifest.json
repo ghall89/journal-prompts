@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mindfulness-prompts/static/css/main.39022160.chunk.css",
+    "main.css": "/mindfulness-prompts/static/css/main.21e3db3a.chunk.css",
     "main.js": "/mindfulness-prompts/static/js/main.e54a56f7.chunk.js",
     "main.js.map": "/mindfulness-prompts/static/js/main.e54a56f7.chunk.js.map",
     "runtime-main.js": "/mindfulness-prompts/static/js/runtime-main.b3d038af.js",
@@ -10,14 +10,14 @@
     "index.html": "/mindfulness-prompts/index.html",
     "service-worker.js": "/mindfulness-prompts/service-worker.js",
     "service-worker.js.map": "/mindfulness-prompts/service-worker.js.map",
-    "static/css/main.39022160.chunk.css.map": "/mindfulness-prompts/static/css/main.39022160.chunk.css.map",
+    "static/css/main.21e3db3a.chunk.css.map": "/mindfulness-prompts/static/css/main.21e3db3a.chunk.css.map",
     "static/js/2.4cce2dca.chunk.js.LICENSE.txt": "/mindfulness-prompts/static/js/2.4cce2dca.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/mindfulness-prompts/static/media/backdrop.7b108a45.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b3d038af.js",
     "static/js/2.4cce2dca.chunk.js",
-    "static/css/main.39022160.chunk.css",
+    "static/css/main.21e3db3a.chunk.css",
     "static/js/main.e54a56f7.chunk.js"
   ]
 }
