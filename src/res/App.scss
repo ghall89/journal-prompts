@@ -77,10 +77,10 @@ button:active {
 .promptText {
 	height: 130px;
 	text-align: center;
-	margin: auto;
+	align-content: center;
+	margin: 0, auto;
 
-	p {
-		position: relative;
+	.prompt {
 		top: 50%;
 		transform: translateY(-50%);
 		font-size: 1.8rem;

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import generatePrompt from '../helpers/generatePrompt';
 import History from './History.jsx';
+import TextTransition, { presets } from 'react-text-transition';
 
 const Prompt = () => {
 	const [modalIsOpen, setIsOpen] = useState(false);
@@ -35,7 +36,12 @@ const Prompt = () => {
 		<>
 			<div className="promptArea card">
 				<div className="promptText">
-					<p>{prompt}</p>
+					{/* <p>{prompt}</p> */}
+					<TextTransition
+						className="prompt"
+						text={prompt}
+						springConfig={presets.wobbly}
+					/>
 				</div>
 				<button onClick={choosePrompt}>New Prompt</button>
 				<button onClick={openModal}>Recent Prompts</button>
