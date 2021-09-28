@@ -85,6 +85,9 @@ button:active {
 		transform: translateY(-50%);
 		font-size: 1.8rem;
 		color: rgb(123, 123, 123);
+		div {
+			min-width: 100%;
+		}
 	}
 }
 
