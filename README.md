@@ -1,6 +1,9 @@
 # Mindfulness Journal Prompts
 
 ![](https://img.shields.io/github/license/ghall89/mindfulness-prompts?style=for-the-badge)
+![](https://img.shields.io/netlify/e42ca796-708c-410d-852e-7315694c5304?style=for-the-badge)
+![](https://img.shields.io/github/languages/top/ghall89/mindfulness-prompts?style=for-the-badge)
+![](https://img.shields.io/github/last-commit/ghall89/mindfulness-prompts/main?style=for-the-badge)
 
 ## Table of Contents
 
@@ -41,7 +44,7 @@ As a user I'd like an app that will generate a random prompt for journaling. I'd
 
 ## Usage
 
-- Visit http://journal-prompt.com, or `localhost:3000` if running locally
+- Visit http://www.journal-prompt.com, or `localhost:3000` if running locally
 - Click `Generate New Prompt` to display a new prompt
 - Click `Previous Prompts` to see a history of prompts you've seen
 
