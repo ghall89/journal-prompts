@@ -31,10 +31,6 @@ As a user I'd like an app that will generate a random prompt for journaling. I'd
 
 ![](./screenshot.png)
 
-## Future Developments
-
-- Move prompts into a database, and allow users to add their own prompts.
-
 ## Installation
 
 - Install node if you don't already have it
@@ -45,7 +41,7 @@ As a user I'd like an app that will generate a random prompt for journaling. I'd
 
 ## Usage
 
-- Visit https://ghall89.github.io/mindfulness-prompts/, or `localhost:3000` if running locally
+- Visit http://http://journal-prompt.com, or `localhost:3000` if running locally
 - Click `Generate New Prompt` to display a new prompt
 - Click `Previous Prompts` to see a history of prompts you've seen
 
