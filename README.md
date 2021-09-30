@@ -11,7 +11,6 @@
   - [User Story](#user-story)
   - [Features](#features)
   - [Screenshot](#screenshot)
-- [Future Developments](#future-developments)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
@@ -52,6 +51,7 @@ As a user I'd like an app that will generate a random prompt for journaling. I'd
 
 - [React](https://reactjs.org)
 - [react-modal](https://www.npmjs.com/package/react-modal)
+- [react-text-transition](https://www.npmjs.com/package/react-text-transition)
 
 ## Credits
 
