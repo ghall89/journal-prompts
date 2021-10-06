@@ -18,7 +18,6 @@ const History = props => {
 						{props.data.history
 							.slice(0)
 							.reverse()
-							.slice(0, 15)
 							.map(item => (
 								<li key={Math.random()}>{item}</li>
 							))}

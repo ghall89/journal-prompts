@@ -25,6 +25,9 @@ const Prompt = () => {
 	useEffect(() => {
 		if (prompt !== history[history.length - 1]) {
 			setHistory(history.concat(prompt));
+			while (history.length > 15) {
+				setHistory(history.splice(history.length - 14));
+			}
 		}
 	}, [prompt, history]);
 
