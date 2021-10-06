@@ -23,12 +23,14 @@ const Prompt = () => {
 	};
 
 	useEffect(() => {
-		localStorage.setItem('mindfullnessPrompts', JSON.stringify(history));
-	}, [history]);
+		if (prompt !== history[history.length - 1]) {
+			setHistory(history.concat(prompt));
+		}
+	}, [prompt, history]);
 
 	useEffect(() => {
-		setHistory([...history, prompt]);
-	}, [prompt]);
+		localStorage.setItem('mindfullnessPrompts', JSON.stringify(history));
+	}, [history]);
 
 	const choosePrompt = () => setPrompt(generatePrompt());
 
