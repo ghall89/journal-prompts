@@ -1,4 +1,4 @@
-# Mindfulness Journal Prompts
+# Journal Prompts
 
 ![](https://img.shields.io/github/license/ghall89/mindfulness-prompts?style=for-the-badge)
 ![](https://img.shields.io/netlify/e42ca796-708c-410d-852e-7315694c5304?style=for-the-badge)
